@@ -3,7 +3,7 @@ function AddCarro(){
         "marca": "fiat",
         "modelo": "Uno Vivace",
         "fabricacao": 2021,
-        "cor":"amarelo"
+        "cor":"partel de flango"
     }
     console.log(carro);
 
@@ -53,7 +53,17 @@ function AddCarrosArray(){
             "fabricacao": 2022,
             "cor":"laranja"
 
-        }
+        },
+
+        {
+
+            "marca": "cacau show",
+            "modelo": "la creme de lacler",
+            "fabricacao": 2017,
+            "cor":"marrom"
+
+        },
+        
         
     ];
 
@@ -64,9 +74,16 @@ function AddCarrosArray(){
         "cor":document.getElementById("cor").value
 }
 /*carros.unshift(carro)  "unshift" para ser o primeiro. "push"para ser o ultímo */
-    carros.push(carro);
-    
-
+   // carros.push(carro);//
+    carros.splice (2,1, carro);
     console.log(carros);
-}
 
+    let findCarro = carros.find(carro => carro.cor == "vermelho"); 
+
+    console.long(findCarro);
+
+    let filtercarro = carros.filter(car => car.ano >=2005
+         && car.cor == "vermelho");
+    console.log(filtercarro);
+    
+}; 
