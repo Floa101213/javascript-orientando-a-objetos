@@ -3,10 +3,36 @@ form{
     box-sizing: border-box;
     box-sizing: content-box;
     margin-right: 1600px;
-
 }    
 
 body{
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
+    
+    
+    
+    
+}
+
+h1{
+    border: solid  black;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+
+fieldset {
+    
+    transform: translate(274%,100%);
+    background-color: rgba(235, 229, 229, 0.438);
+    border: solid rgba(0, 0, 0, 0.842);
+    
+    
+}
+
+
+.formulario{
+
+    box-shadow: 0px 3px 2px 5px black ;
+    background-color: rgb(44, 145, 49);
 }

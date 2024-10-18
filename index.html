@@ -10,7 +10,51 @@
 </head>
 <body>
 
-<form>
+
+    
+    <center><div class="formulario"><h1>formulario do aluno </h1></div></center>
+
+
+    <form>
+        <fieldset>
+            <legend><strong>cadastrato do estudante</strong></legend>
+            <label for="nome">nome:</label>
+            <input type="text"  name="nome" id="nome"><br><br>
+            <label  for="matricula">matricula :</label>
+            <input style= "width: 150px; " type="text"  name="matricula" id="matricula"><br><br>
+
+
+            <label for="nascimento">data de nascimento:</label>
+            <input style= "width: 100px; " type="date"  name="nascimento" id="nascimento"><br><br>
+
+            <label for="email">email:</label>
+            <input style= "width: 150px; " type="email"  name="email" id="email"><br><br>
+
+            <label for="curso">curso:</label>
+            <input style= "width: 150px; " type="text"  name="curso" id="curso"><br><br>
+
+            <label for="sexo">masculino</label>
+            <input type="radio"  name="sexo" id="sexo" value="masculino"><br><br>
+
+            <label for="sexo">feminino</label>
+            <input type="radio"  name="sexo" id="sexo" value="feminino"><br><br>
+
+            
+            <input type="button" onclick="AddAluno()" style= "width: 100px;" value="cadastrar">
+            
+            <input type="button" onclick="ViewAluno()" style= "width: 100px;" value="Entrar">
+
+            <input type="button" onclick="ViewNomeAluno()" style= "width: 100px;" value="mostrar alunos">
+        </fieldset>
+    </form>
+    
+
+
+
+
+
+
+<!-- <form>
     <fieldset>
         <legend>Carros</legend>
         <label for="marca">Marca:</label>
@@ -23,7 +67,7 @@
         <input type="text"  name="cor" id="cor"><br><br>
         <button type="button" onclick="AddCarrosArray()" name="next" id="next">Adicionar</button>
     </fieldset>
-</form>
+</form> -->
 
 </body>
 </html>
