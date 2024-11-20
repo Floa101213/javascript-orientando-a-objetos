@@ -3,71 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="js/script.js"></script>
-    <title>javascript orientando objetos</title>
-    
+    <title>Cadastro do aluno</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 <body>
+    <form id="formulario">
+        <i id="icon" class='bx bx-user'></i>
+        <h1>Cadastro de aluno</h1>
 
+        <label for="nome" id="label_nome">NOME:</label>
+        <input type="text" autocomplete="off" name="nome" id="nome" placeholder="Digite seu nome...">
 
+        <label for="curso" id="label_curso">CURSO:</label>
+        <input type="text" autocomplete="off" name="curso" id="curso" placeholder="Digite seu curso...">
+
+        <label for="ano" id="label_ano">CONCLUSÃO:</label>
+        <input type="number" autocomplete="off" name="ano" id="ano" placeholder="Digite o ano de conclusão...">
+
+        <div id="btn">
+            <button id="btn_cadastrar">Cadastrar</button>
+            <button id="btn_pesquisar">Pesquisar</button>
+            <button id="btn_exibir">Exibir</button>
+            <button id="btn_atualizar">Atualizar</button>
+            <button id="btn_remover">Remover</button>
     
-    <center><div class="formulario"><h1>formulario do aluno </h1></div></center>
-
-
-    <form>
-        <fieldset>
-            <legend><strong>cadastrato do estudante</strong></legend>
-            <label for="nome">nome:</label>
-            <input type="text"  name="nome" id="nome"><br><br>
-            <label  for="matricula">matricula :</label>
-            <input style= "width: 150px; " type="text"  name="matricula" id="matricula"><br><br>
-
-
-            <label for="nascimento">data de nascimento:</label>
-            <input style= "width: 100px; " type="date"  name="nascimento" id="nascimento"><br><br>
-
-            <label for="email">email:</label>
-            <input style= "width: 150px; " type="email"  name="email" id="email"><br><br>
-
-            <label for="curso">curso:</label>
-            <input style= "width: 150px; " type="text"  name="curso" id="curso"><br><br>
-
-            <label for="sexo">masculino</label>
-            <input type="radio"  name="sexo" id="sexo" value="masculino"><br><br>
-
-            <label for="sexo">feminino</label>
-            <input type="radio"  name="sexo" id="sexo" value="feminino"><br><br>
-
-            
-            <input type="button" onclick="AddAluno()" style= "width: 100px;" value="cadastrar">
-            
-            <input type="button" onclick="ViewAluno()" style= "width: 100px;" value="Entrar">
-
-            <input type="button" onclick="ViewNomeAluno()" style= "width: 100px;" value="mostrar alunos">
-        </fieldset>
+        </div>
     </form>
-    
+    <div id="result">
+        <h1></h1>
+        <p id="resultado"></p>
+        <button id="btn_voltar">Voltar</button>
+    </div>
+    <div id="atualizar">
+        <h1>Atualização de aluno:</h1>
+        
+            <label for="nome_div" id="label_nome_div">NOME:</label>
+            <input type="text" autocomplete="off" name="nome_div" id="nome_div" placeholder="Digite seu nome...">
 
-
-
-
-
-
-<!-- <form>
-    <fieldset>
-        <legend>Carros</legend>
-        <label for="marca">Marca:</label>
-        <input type="text"  name="marca" id="marca"><br><br>
-        <label for="modelo">Modelo:</label>
-        <input type="text"  name="modelo" id="modelo"><br><br>
-        <label for="fabricacao">Ano Fabricação:</label>
-        <input type="number"  name="fabricacao" id="fabricacao"><br><br>
-        <label for="cor">Cor:</label>
-        <input type="text"  name="cor" id="cor"><br><br>
-        <button type="button" onclick="AddCarrosArray()" name="next" id="next">Adicionar</button>
-    </fieldset>
-</form> -->
-
+            <label for="nome_atualizado" id="label_nome_atualizado">NOME ATUALIZADO:</label>
+            <input type="text" autocomplete="off" name="nome_atualizado" id="nome_atualizado" placeholder="Digite seu novo nome...">
+            
+            <label for="curso_div" id="label_curso_div">CURSO:</label>
+            <input type="text" autocomplete="off" name="curso_div" id="curso_div" placeholder="Digite seu curso...">
+            
+            <label for="ano_div" id="label_ano_div">CONCLUSÃO:</label>
+            <input type="number" autocomplete="off" name="ano_div" id="ano_div" placeholder="Digite o ano de conclusão...">
+            
+            <div id="btn">
+                <button type="submit" id="btn_atualizar_div">Atualizar</button>
+                <button id="btn_voltar_atualizar">Voltar</button>
+            </div>
+            </div>
+    <script src="js/index.js"></script>
 </body>
 </html>
